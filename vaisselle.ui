@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>971</width>
-    <height>896</height>
+    <width>1119</width>
+    <height>776</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <widget class="QWidget" name="ecran" native="true">
+       <widget class="QVideoWidget" name="ecran" native="true">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
           <horstretch>0</horstretch>
@@ -30,7 +30,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QLabel" name="OnceU">
+         <widget class="QLabel" name="onceU">
           <property name="font">
            <font>
             <weight>75</weight>
@@ -50,7 +50,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="ToBe">
+         <widget class="QLabel" name="toBe">
           <property name="font">
            <font>
             <weight>75</weight>
@@ -67,35 +67,35 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QPushButton" name="Lecture">
+         <widget class="QPushButton" name="lecture">
           <property name="text">
            <string>Lecture</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="Pause">
+         <widget class="QPushButton" name="pause">
           <property name="text">
            <string>Pause</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="Stop">
+         <widget class="QPushButton" name="stop">
           <property name="text">
            <string>Stop</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="Precedent">
+         <widget class="QPushButton" name="precedent">
           <property name="text">
            <string>Precedent</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="Suivant">
+         <widget class="QPushButton" name="suivant">
           <property name="text">
            <string>Suivant</string>
           </property>
@@ -125,7 +125,7 @@
         <property name="sizeHint" stdset="0">
          <size>
           <width>17</width>
-          <height>100</height>
+          <height>50</height>
          </size>
         </property>
        </spacer>
@@ -231,7 +231,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="QLabel" name="Volume">
+         <widget class="QLabel" name="volume">
           <property name="font">
            <font>
             <pointsize>12</pointsize>
@@ -272,13 +272,21 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>971</width>
+     <width>1119</width>
      <height>21</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVideoWidget</class>
+   <extends>QWidget</extends>
+   <header>PySide2.QtMultimediaWidgets</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
